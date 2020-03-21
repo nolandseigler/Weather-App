@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather Application</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css' rel='stylesheet' />
+</head>
+<style>
+    #custom #weather-application {
+        color: lightgrey;
+        text-align: center;
+    }
+    #custom #location {
+        color: lightgrey;
+        text-align: center;
+    }
+    body {
+        background-color: black;
+    }
+    #custom .card {
+        background-color: lightgrey;
+    }
+    #custom #map {
+        height: 47vh;
+    }
+</style>
+<body id="custom">
+<br>
+<h1 id="weather-application">Weather Application</h1>
+<h3 id="location">San Antonio, Texas 78205, United States </h3>
+<div class="container">
+    <div class="card-deck">
+        <div id="today" class="card border-secondary"></div>
+        <div id="tomorrow" class="card border-secondary"></div>
+        <div id="day-after" class="card border-secondary"></div>
+    </div>
+    <br>
+    <div class="map-stuff">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Search A City" id="city-search-input" aria-label="Search A City" aria-describedby="button-addon2">
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" id="get-weather-button">Get Weather</button>
+            </div>
+        </div>
+        <div id="map"></div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="js/keys.js"></script>
+<script src="js/skycons.js"></script>
+<script src='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js'></script>
+
+
+<script src="js/weather_map.js"></script>
+</body>
+</html>
